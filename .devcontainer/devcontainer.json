@@ -1,0 +1,16 @@
+{
+  "name": "Java Spring Dev Container",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/app",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "pivotal.vscode-spring-boot"
+  ],
+  "postCreateCommand": "echo 'Ready to init Spring project!'"
+}
+// Note: This configuration assumes you have a Docker Compose file at the specified path.
+// Adjust the `dockerComposeFile` and `service` fields as necessary to match your setup.
