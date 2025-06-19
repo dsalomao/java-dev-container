@@ -14,7 +14,7 @@
       ]
     }
   },
-  "postCreateCommand": "echo 'Ready to init Spring project!'"
+  "postCreateCommand": "echo 'Ready to init Spring project!'; if [ -f /root/.ssh/id_rsa.pub ]; then echo 'SSH Public Key (Copy it and add to your repo settings):'; cat /root/.ssh/id_rsa.pub; else echo 'No SSH key found.'; fi"
 }
 // Note: This configuration assumes you have a Docker Compose file at the specified path.
 // Adjust the `dockerComposeFile` and `service` fields as necessary to match your setup.
